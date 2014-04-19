@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Slider Plugin</title>
+    <link href="css/jquery.slider.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+    	body{margin: 0;padding: 0;}
+    	#banner{position: relative;}
+    	.slider_item{width: 960px;height: 420px;background: url(images/example/bg.jpg);}
+    	.slider_item span{display: block;position: absolute;background: red;width: 200px;padding: 10px;}
+    	.slider_item img{position: absolute;}
+    	.wp1_3{left: 20px;top: 20px;}
+    	.wp1_2{left: 320px;top: 80px;}
+    	.wp1_1{left: 500px;top: 110px;}
+    	.txt1{left: 700px;top:30px;}
+    	.txt2{left: 700px; top: 150px;}
+    	.slide2Txt1{left: 100px;top: 100px;}
+    	.wp1{left: 20px;top: 30px;}
+    	.wp2{left: 20px;top: 240px;}
+    	.wp1_img{left: 100px;top: 100px;}
+    	.wp2_img{left: 300px;top: 100px;}
+    	.wp3_img{left: 500px;top: 100px;}
+    	.slide5Txt1{left: 600px;top: 30px;}
+    </style>
+
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<div id="banner">  				
+			<div class="slider_item">
+				<img src="images/example/item1/wordpress-256x256.png" class="wp1_3" alt=""></img>			            
+				<img src="images/example/item1/wordpress-128x128.png" class="wp1_2" alt=""></img>			    
+				<img src="images/example/item1/wordpress-64x64.png" class="wp1_1" alt=""></img>  			
+				<span class="txt1"><a href="http://cuishifeng.cn">Test hyperlink</a></span>			
+				<span class="txt2">Above is a hyperlink ;)</span>												
+			</div>
+			<div class="slider_item">                                 	
+				<img src="images/example/mouse.jpg"  class="bigImage" ></img>
+				<span class="slide2Txt1">A mouse</span>								
+			</div>	
+			
+			<div class="slider_item">
+				<span class="wp1">Touch Screen</span>			
+				<span class="wp2">Please Wipe Left or Right</span>															
+				<img src="images/example/item2/wordpress-64x64.png" class="wp1_img" alt=""></img>
+				<img src="images/example/item2/wordpress-128x128.png" class="wp2_img" alt=""></img>			
+				<img src="images/example/item2/wordpress-256x256.png" class="wp3_img" alt=""></img>
+			</div>                                                                                              
+
+			<div class="slider_item">                                 	
+				<img src="images/example/bigimage.jpg"  class="bigImage" ></img>
+				<span class="slide5Txt1">Support Big Image</span>								
+			</div>	
+			
+			</div>    
+        </div>          
+    </div>
+
+
+    <script src="js/lib/jquery-1.11.0.min.js"></script>
+    <script src="js/lib/jquery.slider.min.js"></script>              
+	
+    <script type="text/javascript" charset="utf-8">	
+	 $(document).ready(function() { 
+		
+        $('#banner').slider({
+			className: 'oneByOne1',	 
+			sliderClassName: 'slider_item',
+			easeType: 'random',
+			slideShow: true
+		});  
+		
+		
+	 });
+   	
+	 
+    </script> 
+
+</body>
+</html>
