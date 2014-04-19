@@ -1,3 +1,11 @@
+/*! 
+ * This is a jquery plugin for slider
+ * Author:Shifone
+ * Website:http://www.cuishifeng.cn
+ * Version:1.0.0 
+ * Date:2014-04-20 
+ * License:http://www.apache.org/licenses/LICENSE-2.0 
+ */
 ;(function($) {	
 
 	var easeTypeArr = [ "rollIn", "fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "fadeInRight", "bounceIn", "bounceInDown", "bounceInUp", "bounceInLeft", "bounceInRight", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "fadeInLeftBig", "fadeInRightBig", "fadeInUpBig", "fadeInDownBig", "flipInX", "flipInY", "lightSpeedIn" ];
