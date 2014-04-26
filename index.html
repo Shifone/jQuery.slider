@@ -68,9 +68,29 @@
 	 $(document).ready(function() { 
 		
         $('#banner').slider({
-			className: 'oneByOne1',	 
+			//slider container,custom container class name,default ''
+			className: 'slider_con',	
+			//slider item class name,default 'slider_item'
 			sliderClassName: 'slider_item',
+			//enable drag,default:true
+			enableDrag:true,
+			//show left & right arrow,default true
+			showArrow:true,
+			//pause the auto delay slideshow when user hover,default false
+			pauseByHover:true,
+			//slider item width,default 960
+			width: 960,
+			//slider item height,default 420
+			height: 420,
+			//slider animate time,default 300 mill seconds
+			delay:300,
+			//effect of slider you want,default 'random',it can be one of below
+			//"rollIn", "fadeIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight", "fadeInRight", "bounceIn", 
+			//"bounceInDown", "bounceInUp", "bounceInLeft", "bounceInRight", "rotateIn", "rotateInDownLeft", "rotateInDownRight",
+			//"rotateInUpLeft", "rotateInUpRight", "fadeInLeftBig", "fadeInRightBig", "fadeInUpBig", "fadeInDownBig", "flipInX", 
+			//"flipInY", "lightSpeedIn" 
 			easeType: 'random',
+			//auto play the slider or not,default true
 			slideShow: true
 		});  
 		

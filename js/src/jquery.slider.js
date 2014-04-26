@@ -25,7 +25,7 @@
 			enableDrag: true,
 			showArrow: true,
 			showButton: true,
-			slideShow: false,
+			slideShow: true,
 			slideShowDelay: 3000
 		};
 
